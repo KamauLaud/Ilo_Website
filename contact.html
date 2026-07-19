@@ -31,13 +31,17 @@ a:hover{color:oklch(80% 0.16 85)}
 ::selection{background:oklch(58% 0.26 300/0.3);color:oklch(98% 0.005 300)}
 @keyframes rainFall{0%{transform:translateY(-12%)}100%{transform:translateY(55%)}}
 @keyframes cursorBlink{0%,49%{opacity:1}50%,100%{opacity:0}}
+
+@media (max-width:760px){[data-nav-cta="true"]{display:none!important}[data-nav-links="true"]{gap:12px 16px!important}nav[data-screen-label="Nav"]{gap:10px!important}}
+@media (max-width:480px){h1{font-size:clamp(34px,10.5vw,46px)!important}}
+@media (max-width:540px){[data-contact-row="true"]{grid-template-columns:1fr!important;gap:6px!important}}
 </style>
 </helmet>
 <div style="min-height:100vh;background:oklch(13% 0.02 300);display:flex;flex-direction:column">
 <nav data-screen-label="Nav" style="position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:14px;padding:8px clamp(16px,4vw,40px);min-height:64px;flex-wrap:wrap;row-gap:8px;background:oklch(13% 0.02 300/0.82);backdrop-filter:blur(12px);border-bottom:1px solid oklch(100% 0 0/0.08)">
   <a href="index.html" style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:19px;color:oklch(98% 0.005 300)">DIBIA</a>
   <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.18em;color:oklch(52% 0.025 300)">· #TECH4GUD</span>
-  <div style="display:flex;gap:26px;margin-left:auto;align-items:center;flex-wrap:wrap">
+  <div data-nav-links="true" style="display:flex;gap:26px;margin-left:auto;align-items:center;flex-wrap:wrap">
     <a href="index.html" style="font-family:'Space Mono',monospace;font-weight:700;font-size:11px;letter-spacing:0.18em;color:oklch(72% 0.02 300)" style-hover="color:oklch(98% 0.005 300)">HOME</a>
     <a href="research.html" style="font-family:'Space Mono',monospace;font-weight:700;font-size:11px;letter-spacing:0.18em;color:oklch(72% 0.02 300)" style-hover="color:oklch(98% 0.005 300)">RESEARCH</a>
     <a href="cv.html" style="font-family:'Space Mono',monospace;font-weight:700;font-size:11px;letter-spacing:0.18em;color:oklch(72% 0.02 300)" style-hover="color:oklch(98% 0.005 300)">CV</a>
@@ -58,19 +62,19 @@ a:hover{color:oklch(80% 0.16 85)}
       <p style="margin:24px 0 0;max-width:560px;font-size:18px;line-height:1.6;color:oklch(72% 0.02 300)">Consulting engagements, research collaborations, apprenticeships, speaking — one signal reaches me. Say what you’re building and which gate you’re knocking on.</p>
       <a href="mailto:ciilo@vt.edu?subject=DIBIA%20—%20consulting%20engagement" style="display:inline-flex;align-items:center;height:52px;padding:0 30px;border-radius:6px;background:oklch(58% 0.26 300);color:oklch(98% 0.005 300);font-weight:500;font-size:17px;margin-top:36px" style-hover="background:oklch(67% 0.22 300);box-shadow:0 0 24px oklch(58% 0.26 300/0.45);color:oklch(98% 0.005 300)">Book the consultancy</a>
       <div style="display:grid;gap:0;margin-top:48px;max-width:560px">
-        <div style="display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:baseline;padding:18px 0;border-top:1px solid oklch(100% 0 0/0.08)">
+        <div data-contact-row="true" style="display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:baseline;padding:18px 0;border-top:1px solid oklch(100% 0 0/0.08)">
           <span style="font-family:'Space Mono',monospace;font-weight:700;font-size:11px;letter-spacing:0.22em;color:oklch(52% 0.025 300)">EMAIL</span>
           <a href="mailto:ciilo@vt.edu" style="font-size:18px">ciilo@vt.edu</a>
         </div>
-        <div style="display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:baseline;padding:18px 0;border-top:1px solid oklch(100% 0 0/0.08)">
+        <div data-contact-row="true" style="display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:baseline;padding:18px 0;border-top:1px solid oklch(100% 0 0/0.08)">
           <span style="font-family:'Space Mono',monospace;font-weight:700;font-size:11px;letter-spacing:0.22em;color:oklch(52% 0.025 300)">SCHOLAR</span>
           <a href="https://scholar.google.com/citations?hl=en&amp;user=TeDW0NYAAAAJ&amp;inst=13410158990364976897" style="font-size:18px">Google Scholar profile</a>
         </div>
-        <div style="display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:baseline;padding:18px 0;border-top:1px solid oklch(100% 0 0/0.08)">
+        <div data-contact-row="true" style="display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:baseline;padding:18px 0;border-top:1px solid oklch(100% 0 0/0.08)">
           <span style="font-family:'Space Mono',monospace;font-weight:700;font-size:11px;letter-spacing:0.22em;color:oklch(52% 0.025 300)">LINKEDIN</span>
           <a href="https://www.linkedin.com/in/cilo9737" style="font-size:18px">linkedin.com/in/cilo9737</a>
         </div>
-        <div style="display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:baseline;padding:18px 0;border-top:1px solid oklch(100% 0 0/0.08);border-bottom:1px solid oklch(100% 0 0/0.08)">
+        <div data-contact-row="true" style="display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:baseline;padding:18px 0;border-top:1px solid oklch(100% 0 0/0.08);border-bottom:1px solid oklch(100% 0 0/0.08)">
           <span style="font-family:'Space Mono',monospace;font-weight:700;font-size:11px;letter-spacing:0.22em;color:oklch(52% 0.025 300)">GITHUB</span>
           <a href="https://github.com/KamauLaud" style="font-size:18px">github.com/KamauLaud</a>
         </div>
@@ -81,7 +85,7 @@ a:hover{color:oklch(80% 0.16 85)}
       </div>
     </div>
     <div>
-      <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="headshot-contact" shape="rounded" radius="10" src="assets/photos/cory-suit-2.jpg" placeholder="Drop a portrait — the Kage, night-grade" hint-size="380px,460px" style="width:100%;height:460px"></x-import>
+      <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="headshot-contact" shape="rounded" radius="10" src="assets/photos/cory-suit-2.jpg" placeholder="Drop a portrait — the Kage, night-grade" hint-size="380px,460px" style="width:100%;aspect-ratio:4/5"></x-import>
       <div style="margin-top:14px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.18em;color:oklch(52% 0.025 300)">DR. CORY “IKE” ILO · “KRYPTOKAGE”</div>
       <div style="margin-top:6px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.18em;color:oklch(52% 0.025 300)">LEAD RESEARCH SCIENTIST · FOUNDER &amp; CEO · DIBIA INC.</div>
       <div style="margin-top:6px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.18em;color:oklch(52% 0.025 300)">OAKLAND, CA · THE DIASPORA</div>
